@@ -425,8 +425,8 @@ impl ReflectMapEntities {
         &self,
         world: &mut World,
         entity_map: &EntityMap,
-        entities: Vec<Entity>
-    )  -> Result<(), MapEntitiesError> {
+        entities: Vec<Entity>,
+    ) -> Result<(), MapEntitiesError> {
         (self.map_entities)(world, entity_map, entities)
     }
 }
